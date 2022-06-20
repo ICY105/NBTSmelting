@@ -1,6 +1,6 @@
 {
   "namespaces": [
-    "block_utils"
+    "nbt_smelting"
   ],
   "dependencies": [
     {
