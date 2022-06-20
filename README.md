@@ -2,7 +2,7 @@
 A Minecraft Datapack adding the ability to add smelting recipes with NBT data for input and output items. Currently handles:
 * NBT data for both input & output items
 * Handles furnaces, blast furnaces, smokers, campfires, and soul campfires
-* Designed to cause minimial lag, even with 100s of furnaces
+* Designed to cause minimial lag, even with 1000s of furnaces (runs 2 commands per furnace per 20 ticks when inactive)
 
 Requires [LanternLoad](https://github.com/LanternMC/load) to run.
 
