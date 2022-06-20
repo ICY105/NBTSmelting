@@ -20,7 +20,9 @@ NBT Data to add to items to enable certain functionality
 ```
 Item.tag{nbt_smelting:1b}
   Indicates this item has a custom recipe, triggering the custom smelt functions when the item is in a furnace.
-  Note: to place an item on a campfire, a valid vanilla recipe must exist. It is recommended to add an item -> air recipe.
+  Note: to place an item on a campfire, a valid vanilla recipe must exist. It is recommended to add a recipe that smelts
+    the item into itself if a real item, ie. minecraft:diamond -> minecraft:diamond, or into air if a technical item,
+    ie. minecraft:command_block -> minecraft:air
 ```
 
 ## Function Tags
@@ -38,6 +40,8 @@ function #nbt_smelting:v1/campfire
  
   Output:
     For the furnace, set the item in slot 2 (output slot) to the desired output.
+    ie. execute if data storage nbt_smelting:io item{id:"minecraft:diamond"} run item replace block ~ ~ ~ with minecraft:dirt
+    Note /loot has problems 
     For campfires, spawn the item in the world (as if it had just popped off from a normal recipe finishing).
 ```
 
