@@ -38,7 +38,7 @@ function #nbt_smelting:v1/campfire
  
   Output:
     For the furnace, set the item in slot 2 (output slot) to the desired output.
-	For campfires, spawn the item in the world (as if it had just popped off from a normal recipe finishing).
+    For campfires, spawn the item in the world (as if it had just popped off from a normal recipe finishing).
 ```
 
 ## How to use
