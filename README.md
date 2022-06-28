@@ -41,7 +41,8 @@ function #nbt_smelting:v1/campfire
   Output:
     For the furnace, set the item in slot 2 (output slot) to the desired output.
     ie. execute if data storage nbt_smelting:io item{id:"minecraft:diamond"} run item replace block ~ ~ ~ with minecraft:dirt
-    Note /loot has problems 
+    Note /loot has problems replacing items in a furnace. As a workaround, you can place the item in an
+    inventory somewhere and copy it into the furnace with /item.
     For campfires, spawn the item in the world (as if it had just popped off from a normal recipe finishing).
 ```
 
