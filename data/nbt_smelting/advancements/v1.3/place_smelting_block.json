@@ -16,6 +16,6 @@
       }
   },
   "rewards":{ 
-    "function":"nbt_smelting:v1.2/versioning/place_smelting_block"
+    "function":"nbt_smelting:v1.3/versioning/place_smelting_block"
   }
 }
