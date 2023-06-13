@@ -35,4 +35,4 @@ execute if score #success nbt_smelting.data matches 1 store result block ~ ~ ~ I
 tag @s remove nbt_smelting.furnace.active
 data merge block ~ ~ ~ {CookTime:0s}
 scoreboard players set @s nbt_smelting.data 0
-execute if entity @s if data block ~ ~ ~ Items[{Slot:0b}].tag.nbt_smelting run function nbt_smelting:v1.4/furnace/start_smelt
+execute if entity @s if data block ~ ~ ~ Items[{Slot:0b}].tag.nbt_smelting run function nbt_smelting:v1.5/furnace/start_smelt
