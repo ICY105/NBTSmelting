@@ -1,0 +1,39 @@
+{
+	"values":[
+		"minecraft:wooden_sword",
+		"minecraft:wooden_pickaxe",
+		"minecraft:wooden_axe",
+		"minecraft:wooden_shovel",
+		"minecraft:wooden_hoe",
+
+		"minecraft:oak_sign",
+		"minecraft:spruce_sign",
+		"minecraft:birch_sign",
+		"minecraft:jungle_sign",
+		"minecraft:acacia_sign",
+		"minecraft:dark_oak_sign",
+		"minecraft:mangrove_sign",
+		"minecraft:cherry_sign",
+		"minecraft:bamboo_sign",
+
+		"minecraft:oak_hanging_sign",
+		"minecraft:spruce_hanging_sign",
+		"minecraft:birch_hanging_sign",
+		"minecraft:jungle_hanging_sign",
+		"minecraft:acacia_hanging_sign",
+		"minecraft:dark_oak_hanging_sign",
+		"minecraft:mangrove_hanging_sign",
+		"minecraft:cherry_hanging_sign",
+		"minecraft:bamboo_hanging_sign",
+
+		"minecraft:oak_door",
+		"minecraft:spruce_door",
+		"minecraft:birch_door",
+		"minecraft:jungle_door",
+		"minecraft:acacia_door",
+		"minecraft:dark_oak_door",
+		"minecraft:mangrove_door",
+		"minecraft:cherry_door",
+		"minecraft:bamboo_door"
+	]
+}

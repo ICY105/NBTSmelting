@@ -18,7 +18,7 @@ nbt_smelting.data
 NBT Data to add to items to enable certain functionality
 
 ```
-Item.tag{nbt_smelting:1b}
+Item.component."minecraft:custom_data"{nbt_smelting:1b}
   Indicates this item has a custom recipe, triggering the custom smelt functions when the item is in a furnace.
   Note: to place an item on a campfire, a valid vanilla recipe must exist. It is recommended to add a recipe that smelts
     the item into itself if a real item, ie. minecraft:diamond -> minecraft:diamond, or into air if a technical item,
