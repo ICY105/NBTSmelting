@@ -1,7 +1,7 @@
 
 # check stack size
 execute store result score #output_count nbt_smelting.data run data get block ~ ~ ~ Items[{Slot:2b}].Count
-execute store result score #output_stacksize nbt_smelting.data run function nbt_smelting:v1.6/furnace/get_stack_size
+execute store result score #output_stacksize nbt_smelting.data run function nbt_smelting:v1.7/furnace/get_stack_size
 
 execute if score #output_count nbt_smelting.data >= #output_stacksize nbt_smelting.data run return fail
 
@@ -19,5 +19,5 @@ execute if score #output_count nbt_smelting.data matches 1.. store success score
 execute if score #output_count nbt_smelting.data matches 1.. if score #failed nbt_smelting.data matches 1 run return fail
 
 # Start Smelting
-execute if score #enable nbt_smelting.data matches 1 if items block ~ ~ ~ container.1 * if block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} run function nbt_smelting:v1.6/furnace/fuel
+execute if score #enable nbt_smelting.data matches 1 if items block ~ ~ ~ container.1 * if block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} run function nbt_smelting:v1.7/furnace/fuel
 execute if score #enable nbt_smelting.data matches 1 unless block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} run tag @s add nbt_smelting.furnace.active

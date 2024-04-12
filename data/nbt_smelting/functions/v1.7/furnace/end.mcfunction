@@ -35,4 +35,4 @@ item modify block ~ ~ ~ container.0 nbt_smelting:decrement_count
 tag @s remove nbt_smelting.furnace.active
 data merge block ~ ~ ~ {CookTime:0s}
 scoreboard players set @s nbt_smelting.data 0
-execute if entity @s if items block ~ ~ ~ container.0 *[custom_data~{nbt_smelting:1b}] run function nbt_smelting:v1.6/furnace/start_smelt
+execute if entity @s if items block ~ ~ ~ container.0 *[custom_data~{nbt_smelting:1b}] run function nbt_smelting:v1.7/furnace/start_smelt
