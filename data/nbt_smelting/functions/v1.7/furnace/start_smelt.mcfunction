@@ -1,6 +1,6 @@
 
 # check stack size
-execute store result score #output_count nbt_smelting.data run data get block ~ ~ ~ Items[{Slot:2b}].Count
+execute store result score #output_count nbt_smelting.data run data get block ~ ~ ~ Items[{Slot:2b}].count
 execute store result score #output_stacksize nbt_smelting.data run function nbt_smelting:v1.7/furnace/get_stack_size
 
 execute if score #output_count nbt_smelting.data >= #output_stacksize nbt_smelting.data run return fail
