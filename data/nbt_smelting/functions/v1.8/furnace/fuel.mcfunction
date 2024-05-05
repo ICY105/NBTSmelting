@@ -15,4 +15,4 @@ execute if items block ~ ~ ~ container.1 minecraft:lava_bucket run data merge bl
 execute if items block ~ ~ ~ container.1 minecraft:lava_bucket run item replace block ~ ~ ~ container.1 with minecraft:bucket 2
 
 execute unless block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} run item modify block ~ ~ ~ container.1 nbt_smelting:decrement_count
-execute unless block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} if block ~ ~ ~ #nbt_smelting:furnaces[lit=false] run function nbt_smelting:v1.7/furnace/make_lit
+execute unless block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} if block ~ ~ ~ #nbt_smelting:furnaces[lit=false] run function nbt_smelting:v1.8/furnace/make_lit
