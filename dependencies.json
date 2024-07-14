@@ -2,17 +2,12 @@
   "namespaces": [
     "nbt_smelting"
   ],
-  "dependencies": [
-    {
-      "name": "Lantern Load",
-      "url": "https://github.com/LanternMC/load"
-    }
-  ],
+  "dependencies": [],
   "append_function_tags": [
     {
       "tag": "load:load",
       "value": "#nbt_smelting:load"
     }
   ],
-  "version": "v1.8"
+  "version": "v1.9"
 }
