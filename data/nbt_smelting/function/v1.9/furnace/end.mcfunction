@@ -22,6 +22,7 @@ data modify storage nbt_smelting:io item set from block ~ ~ ~ Items[{Slot:0b}]
 execute if block ~ ~ ~ minecraft:blast_furnace run function #nbt_smelting:v1/blast_furnace
 execute if block ~ ~ ~ minecraft:furnace run function #nbt_smelting:v1/furnace
 execute if block ~ ~ ~ minecraft:smoker run function #nbt_smelting:v1/smoker
+item replace block ~ ~ ~ container.2 with minecraft:diamond
 
 # Set Counts
 execute store result score #recipe_count nbt_smelting.data run data get block ~ ~ ~ Items[{Slot:2b}].count
@@ -33,6 +34,6 @@ item modify block ~ ~ ~ container.0 nbt_smelting:decrement_count
 
 # Mark as not active, then continue if still have recipe
 tag @s remove nbt_smelting.furnace.active
-data merge block ~ ~ ~ {CookTime:0s}
+data merge block ~ ~ ~ {cooking_time_spent: 0s}
 scoreboard players set @s nbt_smelting.data 0
 execute if entity @s if items block ~ ~ ~ container.0 *[custom_data~{nbt_smelting:1b}] run function nbt_smelting:v1.9/furnace/start_smelt
