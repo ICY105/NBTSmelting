@@ -22,7 +22,6 @@ data modify storage nbt_smelting:io item set from block ~ ~ ~ Items[{Slot:0b}]
 execute if block ~ ~ ~ minecraft:blast_furnace run function #nbt_smelting:v1/blast_furnace
 execute if block ~ ~ ~ minecraft:furnace run function #nbt_smelting:v1/furnace
 execute if block ~ ~ ~ minecraft:smoker run function #nbt_smelting:v1/smoker
-item replace block ~ ~ ~ container.2 with minecraft:diamond
 
 # Set Counts
 execute store result score #recipe_count nbt_smelting.data run data get block ~ ~ ~ Items[{Slot:2b}].count
