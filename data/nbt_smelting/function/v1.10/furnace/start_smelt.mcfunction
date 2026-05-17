@@ -18,3 +18,4 @@ execute if score #output_count nbt_smelting.data matches 1.. if score #failed nb
 # Start Smelting
 execute if items block ~ ~ ~ container.1 * if block ~ ~ ~ #nbt_smelting:furnaces{lit_time_remaining: 0s} run function nbt_smelting:v1.10/furnace/fuel
 execute unless block ~ ~ ~ #nbt_smelting:furnaces{lit_time_remaining: 0s} run tag @s add nbt_smelting.furnace.active
+execute if entity @s[tag=nbt_smelting.furnace.active] if block ~ ~ ~ #nbt_smelting:fast_furnaces run data modify block ~ ~ ~ cooking_total_time set value 100s
