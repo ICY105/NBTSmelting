@@ -15,6 +15,8 @@
 		"minecraft:mangrove_sign",
 		"minecraft:cherry_sign",
 		"minecraft:bamboo_sign",
+		"minecraft:pale_oak_sign",
+		"minecraft:poplar_sign",
 
 		"minecraft:oak_hanging_sign",
 		"minecraft:spruce_hanging_sign",
@@ -25,6 +27,8 @@
 		"minecraft:mangrove_hanging_sign",
 		"minecraft:cherry_hanging_sign",
 		"minecraft:bamboo_hanging_sign",
+		"minecraft:pale_oak_hanging_sign",
+		"minecraft:poplar_hanging_sign",
 
 		"minecraft:oak_door",
 		"minecraft:spruce_door",
@@ -34,6 +38,8 @@
 		"minecraft:dark_oak_door",
 		"minecraft:mangrove_door",
 		"minecraft:cherry_door",
-		"minecraft:bamboo_door"
+		"minecraft:bamboo_door",
+		"minecraft:pale_oak_door",
+		"minecraft:poplar_door"
 	]
 }
